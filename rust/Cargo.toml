@@ -9,5 +9,5 @@ name = "main"
 crate-type = ["cdylib"]
 
 [dependencies]
-cyberterm_engine = { package = "cyberterm", git = "https://github.com/cybercoretech/cyberterm", rev = "3e381c782631b62ebce7aeda679f0f0a1c6145e9" }
+cyberterm_engine = { package = "cyberterm", git = "https://github.com/cybercoretech/cyberterm", rev = "75ad692" }
 winit = { version = "0.30.13", default-features = false, features = ["android-native-activity"] }
