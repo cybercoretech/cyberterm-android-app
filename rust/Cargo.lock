@@ -533,7 +533,7 @@ dependencies = [
 [[package]]
 name = "cyberterm"
 version = "0.4.1"
-source = "git+https://github.com/cybercoretech/cyberterm?rev=75ad692#75ad692aca5dbe3f40023582c5e4ba869783ceb4"
+source = "git+https://github.com/cybercoretech/cyberterm?rev=6daf466#6daf466367bf600fb19dacbb1b1b11afdd5d2016"
 dependencies = [
  "alacritty_terminal",
  "arboard",
