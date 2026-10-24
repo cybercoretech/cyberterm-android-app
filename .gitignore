@@ -1,0 +1,9 @@
+.gradle/
+build/
+dist/
+app/build/
+app/src/main/jniLibs/*/libmain.so
+rust/target/
+local.properties
+*.jks
+*.keystore
