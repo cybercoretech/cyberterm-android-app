@@ -20,9 +20,138 @@
     .phone-shot{position:relative;width:min(100%,252px);max-width:252px;justify-self:center;margin:0;padding:8px;border:1px solid #536159;border-radius:42px;background:linear-gradient(145deg,#38423b,#111613 18%,#090c0a 80%,#303a33);box-shadow:0 22px 60px #000c,0 0 30px #39ff8812}.phone-shot:after{content:"";position:absolute;top:112px;right:-4px;width:3px;height:48px;border-radius:0 3px 3px 0;background:#69746c;box-shadow:0 55px 0 #69746c}.phone-shot img{display:block;width:100%;height:auto;aspect-ratio:1080/2340;object-fit:cover;border-radius:34px}.phone-shot:before{content:"";position:absolute;z-index:2;top:15px;left:50%;width:9px;height:9px;transform:translateX(-50%);border:1px solid #303a34;border-radius:50%;background:#050706;box-shadow:0 0 0 3px #070908}.phone-shot figcaption{padding:10px 5px 3px;color:var(--muted);font:9px/1.5 var(--mono);text-align:center}.showcase .phone-shot{align-self:center}@media(max-width:780px){.phone-shot{width:min(70vw,224px);max-width:224px}}
     .phone-shot{width:min(100%,270px);max-width:270px;border-color:#30343a;background:linear-gradient(145deg,#24262a,#111214 20%,#070809 80%,#1b1d20);box-shadow:0 22px 60px #000d,0 0 25px #0008}.phone-shot:after{background:#292c31;box-shadow:0 55px 0 #292c31}.phone-shot img{aspect-ratio:9/16;object-fit:cover;object-position:top}.phone-shot figcaption{color:#a1a4aa}.phone-shot figcaption a{display:inline-block;margin-top:4px;color:var(--green);text-decoration:underline;text-underline-offset:2px}@media(max-width:780px){.phone-shot{width:min(78vw,268px);max-width:268px}}
   </style>
+  <link rel="stylesheet" href="https://cybercoretech.github.io/kit/chooser.css">
+  <script>window.SITE = Object.assign(window.SITE || {}, {"siteLabel": "Cyberterm Classic", "themeVars": {"white": "--text", "acid_green": "--green", "orange": "--amber"}});</script>
+  <script type="module" src="https://cybercoretech.github.io/kit/chooser.js"></script>
+  <style id="cc-mobile-first">
+/* Mobile floor (phones + tablets): readable text and finger-sized targets.
+   Generated per range from what renders under 11px / 24px; desktop untouched. */
+@media (max-width: 600px) {
+  nav.nav-links > a,
+  a.nav-github,
+  div.termbar > span,
+  span.online,
+  div.status,
+  small,
+  span.index,
+  figcaption,
+  figcaption > a,
+  div.checksum,
+  a.checksum-link,
+  button.copy,
+  #contact-label,
+  small.footer-note,
+  h2.footer-label,
+  span.footer-inline > a,
+  #signals-label,
+  span.footer-home-copy > em,
+  a.footer-signal,
+  a.footer-signal > span,
+  a.footer-signal > i,
+  #support-label,
+  a.donate,
+  a.donate > span,
+  p.footer-license,
+  p.footer-license > a,
+  div.wrap > span,
+  div.wrap > span > strong,
+  div.footer-links > a,
+  div.footer-links > span { font-size: 11px !important; }
+}
+@media (min-width: 601px) and (max-width: 860px) {
+  a.nav-github,
+  div.termbar > span,
+  span.online,
+  div.status,
+  small,
+  span.index,
+  figcaption,
+  figcaption > a,
+  div.checksum,
+  a.checksum-link,
+  button.copy,
+  #contact-label,
+  small.footer-note,
+  h2.footer-label,
+  span.footer-inline > a,
+  #signals-label,
+  span.footer-home-copy > em,
+  a.footer-signal,
+  a.footer-signal > span,
+  a.footer-signal > i,
+  #support-label,
+  a.donate,
+  a.donate > span,
+  p.footer-license,
+  p.footer-license > a,
+  div.wrap > span,
+  div.wrap > span > strong,
+  div.footer-links > a,
+  div.footer-links > span { font-size: 11px !important; }
+}
+@media (min-width: 861px) and (max-width: 1024px) {
+  a.nav-github,
+  div.termbar > span,
+  span.online,
+  div.status,
+  small,
+  span.index,
+  figcaption,
+  figcaption > a,
+  div.checksum,
+  a.checksum-link,
+  button.copy,
+  #contact-label,
+  small.footer-note,
+  h2.footer-label,
+  span.footer-inline > a,
+  #signals-label,
+  span.footer-home-copy > em,
+  a.footer-signal,
+  a.footer-signal > span,
+  a.footer-signal > i,
+  #support-label,
+  a.donate,
+  a.donate > span,
+  p.footer-license,
+  p.footer-license > a,
+  div.wrap > span,
+  div.wrap > span > strong,
+  div.footer-links > a,
+  div.footer-links > span { font-size: 11px !important; }
+}
+@media (pointer: coarse) {
+  figcaption > a,
+  div.links > a,
+  a.footer-email,
+  a.footer-signal,
+  div.footer-links > a { min-height: 24px; min-width: 24px; }
+  a.checksum-link,
+  span.footer-inline > a { display: inline-flex; align-items: center; min-height: 24px; min-width: 24px; }
+}
+/* Layout fixes: phones and tablets only; laptops and desktops untouched. */
+@media (max-width: 1024px) {
+  /* Mobile first: nothing may make the page wider than the screen.
+     Grid/flex columns may shrink below their widest line; code scrolls in place. */
+  pre { max-width: 100%; overflow-x: auto; }
+  img, video { max-width: 100%; height: auto; }
+  div.install > * { min-width: 0; }
+  div.install-meta > * { min-width: 0; }
+  div.codebox > code { white-space: normal; overflow-wrap: anywhere; }
+  /* Long paths and URLs in inline code may break anywhere instead of widening the page. */
+  :not(pre) > code { overflow-wrap: anywhere; }
+  /* Touch: nav links get a 24px target. */
+  .nav-links a { display: inline-flex; align-items: center; min-height: 24px; }
+  /* Phones: like the desktop Cyberterm site, the header keeps just brand, theme
+     and GitHub; Install is the first button under the header. */
+  @media (max-width: 480px) { .nav-links a:not(.nav-github) { display: none; } }
+  /* The brand never shrinks; the theme chooser drops to its swatch instead. */
+  header .brand { flex-shrink: 0; }
+}
+  </style>
 </head>
 <body>
-  <header><div class="wrap nav"><a class="brand" href="#top" aria-label="Cyberterm Android home"><img src="assets/brand/cyberterm-icon.svg" alt=""><span>CYBER<em>TERM</em></span></a><nav class="nav-links" aria-label="Primary navigation"><a href="https://cybercoretech.github.io/cyberterm/#workspace">Workspace</a><a href="https://cybercoretech.github.io/cyberterm/#blocks">Blocks</a><a href="https://cybercoretech.github.io/cyberterm/#ai">AI</a><a href="https://cybercoretech.github.io/cyberterm/#agents">Agents</a><a href="https://cybercoretech.github.io/cyberterm/#power">Power</a><a href="#install">Install</a><a href="#top" aria-current="page">Android ↗</a><div class="theme-picker"><button id="themeButton" class="theme-button" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="themeMenu" title="Site theme, shared with Cybercore sites">CYBERTERM CLASSIC</button><div id="themeMenu" class="theme-menu" role="listbox" aria-label="Site theme" hidden></div></div><a class="nav-github" href="https://github.com/cybercoretech/cyberterm-android-app">GitHub ↗</a></nav></div></header>
+  <header><div class="wrap nav"><a class="brand" href="#top" aria-label="Cyberterm Android home"><img src="assets/brand/cyberterm-icon.svg" alt=""><span>CYBER<em>TERM</em></span></a><nav class="nav-links" aria-label="Primary navigation"><a href="https://cybercoretech.github.io/cyberterm/#workspace">Workspace</a><a href="https://cybercoretech.github.io/cyberterm/#blocks">Blocks</a><a href="https://cybercoretech.github.io/cyberterm/#ai">AI</a><a href="https://cybercoretech.github.io/cyberterm/#agents">Agents</a><a href="https://cybercoretech.github.io/cyberterm/#power">Power</a><a href="#install">Install</a><a href="#top" aria-current="page">Android ↗</a><div class="theme-picker"><cybercore-theme-chooser adopt compact><button id="themeButton" class="theme-button" type="button">Cyberterm Classic</button></cybercore-theme-chooser></div><a class="nav-github" href="https://github.com/cybercoretech/cyberterm-android-app">GitHub ↗</a></nav></div></header>
   <main id="top" class="wrap">
     <section class="hero">
       <div><p class="kicker">GPU TERMINAL // ANDROID 0.1.0</p><h1>Your terminal.<br><span>In your pocket.</span></h1><p class="lead">A real local shell in a GPU-rendered terminal, powered by Cyberterm's Rust engine. No root, account, or network permission.</p><div class="buttons"><a class="btn" href="#install">Get Cyberterm ↓</a><a class="btn secondary" href="https://cybercoretech.github.io/cyberterm/">Desktop Cyberterm ↗</a></div></div>
@@ -43,21 +172,7 @@
   </footer>
   <script>
     document.querySelectorAll('.copy').forEach(button=>button.addEventListener('click',async()=>{const code=button.previousElementSibling.textContent;await navigator.clipboard.writeText(code);button.textContent='COPIED';setTimeout(()=>button.textContent='COPY',1400)}));
-    (function(){
-      var root=document.documentElement,DATA='/data',STORE='cybercore-theme',CLASSIC='cyberterm-classic';
-      var LABELS={'cybercore-tech':'CYBERCORE TECH','cyberdyne':'CYBERDYNE','cyberpunk':'CYBERPUNK','default':'DEFAULT / CLASSICS','dystopian':'DYSTOPIAN','neosynth':'NEOSYNTH','omarchy-live':'OMARCHY LIVE','synthwave':'SYNTHWAVE'};
-      var button=document.getElementById('themeButton'),menu=document.getElementById('themeMenu'),families={},cache={};
-      var vars={'bg':'--bg','white':'--text','acid_green':'--green','hot_pink':'--pink','purple':'--purple','cyan':'--cyan','orange':'--amber','red':'--red','panel':'--panel','line':'--line','muted':'--muted'};
-      function display(name){return name===CLASSIC?'CYBERTERM CLASSIC':name.replace(/-/g,' ').toUpperCase()}
-      function familyOf(name){return Object.keys(families).find(function(family){return families[family].indexOf(name)>=0})}
-      function paint(name,palette){if(palette){Object.keys(vars).forEach(function(key){if(palette[key])root.style.setProperty(vars[key],'#'+palette[key])})}else{Object.keys(vars).forEach(function(key){root.style.removeProperty(vars[key])})}root.dataset.theme=name;button.textContent=display(name);menu.querySelectorAll('.theme-option').forEach(function(option){option.setAttribute('aria-selected',String(option.dataset.value===name))})}
-      function apply(name,persist){if(name===CLASSIC){paint(name,null)}else{var family=familyOf(name);if(!family)return;(cache[name]?Promise.resolve(cache[name]):fetch(DATA+'/themes/'+family+'/'+name+'.json').then(function(response){if(!response.ok)throw response.status;return response.json()})).then(function(palette){cache[name]=palette;paint(name,palette)}).catch(function(error){console.warn('theme',error)})}if(persist){try{localStorage.setItem(STORE,name)}catch(error){}}}
-      function close(){menu.hidden=true;button.setAttribute('aria-expanded','false')}
-      function build(){menu.innerHTML='';[['cyberterm',[CLASSIC]]].concat(Object.keys(families).map(function(family){return[family,families[family]]})).forEach(function(group){var heading=document.createElement('div');heading.className='theme-group-label';heading.textContent=group[0]==='cyberterm'?'CYBERTERM':(LABELS[group[0]]||group[0].toUpperCase());menu.append(heading);group[1].forEach(function(name){var option=document.createElement('button');option.type='button';option.className='theme-option';option.setAttribute('role','option');option.dataset.value=name;option.textContent=display(name);option.addEventListener('click',function(){apply(name,true);close();button.focus()});menu.append(option)})})}
-      button.addEventListener('click',function(){var opening=menu.hidden;menu.hidden=!opening;button.setAttribute('aria-expanded',String(opening));var current=opening&&menu.querySelector('[aria-selected="true"]');if(current)menu.scrollTop=current.offsetTop-menu.clientHeight/2+current.offsetHeight/2});
-      document.addEventListener('pointerdown',function(event){if(!event.target.closest('.theme-picker'))close()});document.addEventListener('keydown',function(event){if(event.key==='Escape'&&!menu.hidden){close();button.focus()}});
-      fetch(DATA+'/cybergrid.json').then(function(response){if(!response.ok)throw response.status;return response.json()}).then(function(schema){families=schema.families||{};build();var requested=new URLSearchParams(location.search).get('theme'),saved=null;try{saved=localStorage.getItem(STORE)}catch(error){}var known=function(name){return name&&(name===CLASSIC||familyOf(name))};var start=[requested,saved,CLASSIC].find(known);apply(start,Boolean(requested))}).catch(function(error){console.warn('theme registry offline',error);button.textContent='REGISTRY OFFLINE';build()});
-    }());
+    // Themes: the universal Cybercore chooser (kit/chooser.js); "Cyberterm classic" is the site default.
   </script>
 </body>
 </html>
